@@ -1,0 +1,102 @@
+/* General styles */
+body {
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+#main-header {
+    font-family: 'Verdana', sans-serif;
+    text-transform: uppercase;
+}
+/* General styles - END */
+
+/* Responsive styles*/
+@media screen and (max-width: 991px) {
+    #main-header {
+        width: 100vw;
+        height: 50vh;
+        background-image: url(../img/man-1.jpg);
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    .header-caption {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        left: 50%;
+        top: 100%;
+        transform: translate(-50%, 0);
+    }
+    .header-caption h1,
+    .header-caption h2 {
+        font-weight: 600;
+    }
+    .header-caption h1 {
+        font-size: 1em;
+    }
+    .header-caption h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1170px) {
+	#main-header {
+        width: 100vw;
+        height: 70vh;
+        background-image: url(../img/man-2.jpg);
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: translate(0, -4%);
+    }
+    .header-caption {
+        width: 40%;
+        text-align: left;
+        transform: translate(140%, 200%);
+    }
+    .header-caption h1,
+    .header-caption h2 {
+        font-weight: 600;
+        color: #fff;
+    }
+    .header-caption h1 {
+        font-size: 1em;
+    }
+    .header-caption h2 {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (min-width: 1171px) {
+	#main-header {
+        width: 100vw;
+        height: 100vh;
+        background-image: url(../img/man-1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    .header-caption {
+        width: 50%;
+        position: absolute;
+        text-align: left;
+        left: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+    }
+    .header-caption h1,
+    .header-caption h2 {
+        font-weight: 600;
+        color: #fff;
+    }
+    .header-caption h1 {
+        font-size: 1.5em;
+    }
+    .header-caption h2 {
+        font-size: 2em;
+    }
+}
+/* Responsive styles - END */
